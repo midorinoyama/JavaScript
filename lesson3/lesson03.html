@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>lesson03</title>
+</head>
+<body>
+  <form>
+    <label>名前：</label>
+    <input type="text" id="nameText">
+    <input type="button" value="送信" onclick="clicked()"> 
+  </form>
+
+  <script>
+    function clicked() {
+      const nameText = document.getElementById('nameText');
+      alert("私の名前は" + nameText.value +"です。");
+    }
+  </script>
+</body>
+</html>
